@@ -29,11 +29,18 @@ const SEND_MESSAGE_ENDPOINT =
 const nameInputElement = document.querySelector('#name-input')
 const messageInputElement = document.querySelector('#message-input')
 
-document.querySelector('#send-form').addEventListener('submit', (event) => {
-	event.preventDefault() // Zamezí přesměrování na jinou stránku
+const onSubmit = (event) => {
+	event.preventDefault() // Zamezí přesměrování na jinou stránku při odesílání formuláře
 
-	console.log('Name:', nameInputElement.value)
-	console.log('Message:', messageInputElement.value)
+	console.log(
+		'Data:',
+		JSON.stringify({
+			name: nameInputElement.value,
+			message: messageInputElement.value,
+		}),
+	)
 
 	// @TODO: odešli zprávu na server
-})
+}
+
+document.querySelector('#send-form').addEventListener('submit', onSubmit)
