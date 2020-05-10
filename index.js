@@ -8,6 +8,20 @@ const messagesElement = document.querySelector('#messages')
 
 // @TODO: v opakovaném intervalu nahraj zprávy ze serveru a zobraz v elementu #messages
 
+const renderMessage = (name, message, date) => {
+	// @TODO: funkce vracející HTML zprávy
+}
+
+const renderMessages = (messages) => {
+	// @TODO: funkce vypisující zprávy na stránku
+}
+
+const updateMessages = () => {
+	// @TODO: funkce stahující zprávy ze server a přidávající je na stránku
+}
+
+setInterval(updateMessages, 2000) // Každé dvě sekundy zavolá updateMessages
+
 /* ========== ODESÍLÁNÍ ZPRÁV ========== */
 
 const SEND_MESSAGE_ENDPOINT =
