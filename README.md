@@ -19,7 +19,7 @@
       	{ name: 'Ivana', message: 'Ahoj', date: '12. 5. 2020 11:02:15' },
       ])
       ```
-   1. Pomocí zabudované funkce `fetch` stáhni uvnitř `updateMessages` zprávy z api. Ukázkový kód najdeš v [dokumentaci](https://czechichat.herokuapp.com/documentation/). Zprávy přes `renderMessages(data.messages)` zobraz na stránce.
+   1. Pomocí zabudované funkce `fetch` stáhni uvnitř `updateMessages` zprávy z api. Ukázkový kód najdeš v [dokumentaci](https://czechichat.herokuapp.com/documentation/). Zprávy přes `renderMessages(data.messages)` zobraz na stránce. Měly by se ti ukázat minimálně dvě.
 1. Uprav soubor `index.js` tak, aby formulář pomocí api odesílal nové zprávy na server.
    1. Doplň funkci `onSubmit`, která při uložení formuláře odešle jméno a text z inputů.
    1. Pozdrav ostatní v chatu. Vyplň na stránce políčko pro tvé jméno a zprávu textem „Ahoj“. Odešli.
