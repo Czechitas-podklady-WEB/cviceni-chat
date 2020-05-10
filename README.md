@@ -28,7 +28,7 @@
 
 1. Vymaž políčko na zadávání textu zprávy po jeho odeslání.
 1. Zabraň dvojímu odeslání formuláře, pokud uživatel omylem dvakrát za sebou rychle klikne na `Odeslat`.
-1. Přidej do stránky CSS, které problikne žlutě všemi zprávami při přijetí jakékoliv nové. Vyžaduje úpravu `index.html`.
+1. Přidej do stránky CSS, které problikne žlutě všemi zprávami při každém renderu. Vyžaduje úpravu `index.html`.
    ```css
    <style>
        @keyframes new-message {
@@ -41,4 +41,4 @@
        }
    </style>
    ```
-1. Při přijímání zpráv sleduj hodnotu `lastUpdate`, kterou posílá server společně s `messages`. Volej `renderMessages` jen při změně `lastUpdate`. Server mění tuto hodnotu jen při přijetí nové zprávy.
+1. Při přijímání zpráv sleduj hodnotu `lastUpdate`, kterou posílá server společně s `messages`. Volej `renderMessages` jen při změně `lastUpdate`. Server mění tuto hodnotu pouze při přijetí nové zprávy.
