@@ -6,8 +6,6 @@ const GET_MESSAGES_ENDPOINT =
 	'https://czechichat.herokuapp.com/api/list-messages'
 const messagesElement = document.querySelector('#messages')
 
-// @TODO: v opakovaném intervalu nahraj zprávy ze serveru a zobraz v elementu #messages
-
 const renderMessage = (name, message, date) => {
 	// @TODO: funkce vracející HTML zprávy
 }
