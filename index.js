@@ -2,8 +2,6 @@
 
 /* ========== PŘIJÍMÁNÍ ZPRÁV ========== */
 
-const GET_MESSAGES_ENDPOINT =
-	'https://czechichat.herokuapp.com/api/list-messages'
 const messagesElement = document.querySelector('#messages')
 
 const renderMessage = (name, message, date) => {
@@ -22,8 +20,6 @@ setInterval(updateMessages, 2000) // Každé dvě sekundy zavolá updateMessages
 
 /* ========== ODESÍLÁNÍ ZPRÁV ========== */
 
-const SEND_MESSAGE_ENDPOINT =
-	'https://czechichat.herokuapp.com/api/send-message'
 const nameInputElement = document.querySelector('#name-input')
 const messageInputElement = document.querySelector('#message-input')
 
