@@ -8,11 +8,11 @@
    1. Doplň tělo funkce `Message`. Jejím úkolem bude vracet řetězec HTML jedné zprávy podle předlohy, kterou najdeš v `index.html`. Správné chování můžeš vyzkoušet například výpisem do konzole pomocí `console.log(Message({name: 'Pavel', message: 'Ahoj 👋', date: '11. 5. 2020 17:30:00'}))`.
    1. Dopiš funkci `MessageList`. Pomocí `for` smyčky zavolej pro každou zprávu `Message(props.items[i])`. Všechny řetězce spoj v jeden a vrať.
    1. Vyzkoušej, že volání `show(testMessages)` přidá zkušební zprávy do stránky.
-   1. Pomocí zabudované funkce `fetch` stáhni uvnitř `fetchMessagesAndShow` zprávy z api. Ukázkový kód najdeš v [dokumentaci](https://czechichat.herokuapp.com/documentation/) v části `Get recent messages`. Zprávy přes `show(data.messages)` zobraz na stránce. Měly by se ti ukázat minimálně dvě.
+   1. Pomocí zabudované funkce `fetch` stáhni uvnitř `fetchMessagesAndShow` zprávy z api. Ukázkový kód najdeš v [dokumentaci](https://czechichat.deno.dev/documentation/) v části `Get recent messages`. Zprávy přes `show(data.messages)` zobraz na stránce. Měly by se ti ukázat minimálně dvě.
    1. Smaž z html ukázkovou šablonu zprávy, ať při načtení stránky neproblikává.
 
 1. Uprav soubor `index.js` tak, aby formulář pomocí api odesílal nové zprávy na server.
-   1. Doplň funkci `onSubmit`, která při uložení formuláře odešle jméno a text z inputů. Vycházej ze sekce `Send message` v [dokumentaci](https://czechichat.herokuapp.com/documentation/).
+   1. Doplň funkci `onSubmit`, která při uložení formuláře odešle jméno a text z inputů. Vycházej ze sekce `Send message` v [dokumentaci](https://czechichat.deno.dev/documentation/).
    1. Pozdrav ostatní v chatu. Vyplň na stránce políčko pro tvé jméno a zprávu textem „Ahoj“. Odešli.
 
 ## Bonus
